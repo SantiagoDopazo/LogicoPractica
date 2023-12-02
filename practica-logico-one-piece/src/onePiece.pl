@@ -60,6 +60,7 @@ quienSeDestacoMas(Pirata, Evento):-
     impactoEnRecompensa(Pirata, Evento, Recompensa),
     forall((impactoEnRecompensa(OtroTripulante, Evento, OtraRecompensa), Pirata \= OtroTripulante), Recompensa > OtraRecompensa).
 
+
 pasoDesapercibido(Pirata, Evento):-
     tripulante(Pirata, Tripulacion),
     eventoTripulacion(Evento, Tripulacion),
